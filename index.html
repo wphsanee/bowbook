@@ -14,6 +14,7 @@
 
     <style>
         body {
+            margin: 0;
             font-family: "Montserrat", "Prompt", sans-serif;
             background-color: #ffffff;
         }
@@ -22,10 +23,19 @@
 <body>
     <header class="header">
         <div class="navbar">
-            <img src="image/bowbook_logo.svg" alt="bowbook logo">
-            <img src="image/menu_icon.svg" alt="menu icon">
+            <img class="logo" src="image/bowbook_logo.svg" alt="bowbook logo">
+            <img class="menu-icon" src="image/menu_icon.svg" alt="menu icon">
         </div>
     </header>
-    
+    <main>
+        <section class="button-group">
+            <button class="card-button borrow">
+                <h2>ยืม</h2>
+            </button>
+            <button class="card-button return">
+                <h2>คืน</h2>
+            </button>
+        </section>
+    </main>
 </body>
-</html>
+</html> 
