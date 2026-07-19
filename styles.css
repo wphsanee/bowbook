@@ -52,11 +52,58 @@
 
 .card-button h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Prompt", sans-serif;
 }
 
-.card-button:hover {
-    background-color: #d9ceb2;
+.card-button.borrow:hover {
+    background-color: #B29DBD;
     transform: translateY(-5px);
+}
+
+.card-button.return:hover {
+    background-color: #B29DBD;
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: #AF92B5;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    margin: 0;
+
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat", "Prompt", sans-serif;
+}
+
+.menu{
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 220px;
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    overflow: hidden;
 }
