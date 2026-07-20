@@ -83,27 +83,111 @@
 
 .footer-text {
     margin: 0;
-
     color: white;
     font-size: 16px;
     font-family: "Montserrat", "Prompt", sans-serif;
 }
 
-.menu{
+.menu {
     position: relative;
 }
 
-.dropdown{
+.dropdown {
     display: none;
     position: absolute;
     top: 45px;
     right: 0;
     width: 220px;
     background: white;
-
     border-radius: 12px;
-
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-
     overflow: hidden;
 }
+
+.dropdown a {
+    display:block;
+    padding:16px 20px;
+    text-decoration:none;
+    color:#333;
+    font-family:"Prompt",sans-serif;
+}
+
+.dropdown a:hover {
+    background:#F2F2F2;
+}
+
+.dropdown.show {
+    display:block;
+}
+
+.modal {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content {
+    width:350px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.close-header {
+    display: flex;
+    align-self: flex-end;
+}
+
+.modal-content h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    align-self: center;
+}
+
+.close-icon {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.modal-content input {
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.loginbtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.login-btn {
+    width: 150px;
+    height: 50px;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#6F597A;
+    color:white;
+    cursor:pointer;
+    font-family: "Prompt", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal.show{
+    display:flex;
+}
+
+
+

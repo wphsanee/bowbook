@@ -25,9 +25,9 @@
         <div class="navbar">
             <img class="logo" src="image/bowbook_logo.svg" alt="bowbook logo">
             <div class="menu">
-                <img class="menu-icon" src="image/menu_icon.svg" alt="menu icon">
+                <img id="menuIcon" class="menu-icon" src="image/menu_icon.svg" alt="menu icon">
                 <div id="dropdownMenu" class="dropdown">
-                    <a href="#">เข้าสู่ระบบ</a>
+                    <a href="#" id="loginLink">เข้าสู่ระบบ</a>
                     <a href="#">สถานะการยืม</a>
                     <a href="#">ประวัติการยืม</a>
                 </div>
@@ -50,5 +50,25 @@
             © 2026 BOWBOOK • Created by Wiphasanee Chailoet
         </p>
     </footer>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="close-header">
+                <img id="closeModal" class="close-icon" src="image/close_icon.svg" alt="close icon">
+            </div>
+                <h2>เข้าสู่ระบบ</h2>
+                <label>ชื่อผู้ใช้</label>
+                    <input type="text" id="username">
+                <label>รหัสผ่าน</label>
+                    <input type="password" id="password">
+            <div class="loginbtn">
+                <button class="login-btn">ยืนยัน</button>
+            </div>
+            <p>
+                ยังไม่มีบัญชี?
+                <a href="register.html">ลงทะเบียน</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html> 
