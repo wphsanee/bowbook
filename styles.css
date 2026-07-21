@@ -1,3 +1,18 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", "Prompt", sans-serif;
+    background-color: #ffffff;
+    
+}
+
+main {
+    flex: 1;
+    align-self: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -165,13 +180,14 @@
     border-radius:10px;
 }
 
-.loginbtn {
+/* login next and register button */
+.loginbtn, .nextbtn, .regbtn  {
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
 
-.login-btn {
+.login-btn, .next-btn , .reg-btn {
     width: 150px;
     height: 50px;
     padding:10px;
@@ -185,9 +201,21 @@
     font-weight: 600;
 }
 
+.login-btn:hover,
+.next-btn:hover,
+.reg-btn:hover{
+
+    background:#B29DBD;
+
+}
+/*end button*/
+
 .modal.show{
     display:flex;
 }
 
+.modal-content a {
+    color: #000000;
+}
 
 
